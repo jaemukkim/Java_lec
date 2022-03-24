@@ -1,4 +1,4 @@
-package Chap06_07.EX06;
+package chap06_07.Ex06;
 
 public class Package_2 {
 

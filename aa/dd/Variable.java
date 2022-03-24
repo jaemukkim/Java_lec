@@ -6,23 +6,24 @@ public class Variable {
 		
 		System.out.println(a);
 		System.out.println(b);
-		System.out.println("================");
+		System.out.println("===========");
 		System.out.println(b + "출력");
 		System.out.println(a + b + "출력");
 		
-		System.out.println("==============");
+		System.out.println("=============");
 		System.out.println();
 		
 		a=10;
 		b="오늘" ;
+		
 		System.out.println(a);
 		System.out.println(b);
-		System.out.println("================");
+		System.out.println("===========");
 		System.out.println(b + "출력");
 		System.out.println(a + b + "출력");
 		
 		a= 30;
-		b= "10" ; 
+		b= "10";
 		
 	}
 }

@@ -8,23 +8,23 @@ public class UsageOfDataType {
 		int a = 3;
 		int b;
 		b=4;
-
+		
 		System.out.println(a);
 		System.out.println(b);
-		System.out.println("=================");
+		System.out.println("===============");
 		
 		a = 10;
 		b = 30;
 		System.out.println(a);
 		System.out.println(b);
 		
-		System.out.println("=================");
+		System.out.println("===================");
 		
-		//byte a ;		// 선언된 변수는 재선언 할 수 없다. 
-		//a = 10.02;		// 정수로 선언된 변수에는 다른 데이터 타입의 값을 넣을 수 없다. 
+		//byte a ;       // 선언된 변수는 재선언 할 수 없다.
+		//a = 10.02;		 // 정수로 선언된 변수에는 다른 데이터 타입의 값을 넣을 수 없다.
 		
-		char c; 			//char 글자 1자 , 
-		c = 'A'; 
+		char c;				//char 글자 1자 , 
+		c = 'A';			//Char 은 작은 따옴표만
 		System.out.println(c);
 		
 		String d ;
@@ -33,6 +33,9 @@ public class UsageOfDataType {
 		
 		String e = "11강의장";
 		System.out.println(e);
+				
+		
+		
 		
 		
 	}
