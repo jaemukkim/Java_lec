@@ -15,11 +15,12 @@ package chap15;
 class name extends Thread {
 	@Override
 	public void run() {
+		try {Thread.sleep(0);} catch (InterruptedException e1) {}
 		String[] name = {"이름 ", "나이 ", "국어 ", "영어 ", "수학 " };
 //		try {Thread.sleep(0);} catch (InterruptedException e1) {}
 		for(int i=0; i<name.length; i++) {
-			System.out.println(name[i]);
-			try {Thread.sleep(10);} catch (InterruptedException e) {}
+			System.out.print(name[i] + "\t");
+			try {Thread.sleep(200);} catch (InterruptedException e) {}
 		}
 	};
 }
@@ -29,11 +30,11 @@ class Student implements Runnable {
 	public void run() {
 
 		
+		try {Thread.sleep(10);} catch (InterruptedException e1) {}
 		String[] score = {"홍길동","10" , "20" , "30" , "40" };
-		try {Thread.sleep(60);} catch (InterruptedException e1) {}
 		for(int i=0; i<score.length; i++) {
-			System.out.print(" " + score[i]);
-			try {Thread.sleep(50);} catch (InterruptedException e) {}
+			System.out.print(score[i] + "\t");
+			try {Thread.sleep(200);} catch (InterruptedException e) {}
 		}
 	};
 }
@@ -57,11 +58,11 @@ public class EX_CreateAndStartThread {
 		Thread thread2 = new Thread(new Runnable() {
 			public void run() {
 				
+				try {Thread.sleep(20);} catch (InterruptedException e1) {}
 				String[] score = {"이순신","50", "60", "70", "80"};
-				try {Thread.sleep(60);} catch (InterruptedException e1) {}
 				for(int i=0; i<score.length; i++) {
-						System.out.println(" " + score[i]);
-						try {Thread.sleep(60);} catch (InterruptedException e1) {}
+						System.out.print(score[i] + "\t");
+						try {Thread.sleep(200);} catch (InterruptedException e1) {}
 						
 					}
 			};			
@@ -71,11 +72,11 @@ public class EX_CreateAndStartThread {
 				
 				Thread thread3 = new Thread(new Runnable() {
 					public void run() {
+						try {Thread.sleep(30);} catch (InterruptedException e1) {}
 						String[] score = {"신사임당", "100", "90", "80", "70"};
-						try {Thread.sleep(60);} catch (InterruptedException e1) {}
 						for(int i=0; i<score.length; i++) {
-							System.out.print(" " + score[i]);
-							try {Thread.sleep(50);} catch (InterruptedException e1) {}						
+							System.out.println(score[i] + "\t");
+							try {Thread.sleep(200);} catch (InterruptedException e1) {}						
 						}
 					};
 				}
