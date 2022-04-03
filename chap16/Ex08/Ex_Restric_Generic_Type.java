@@ -67,13 +67,26 @@ class Pancil {
 	@Override
 	public String toString() {
 		return name + "이고 가격은 " + price;
-	}
-	
+	}	
 }
+
+
+
 
 public class Ex_Restric_Generic_Type {
 
 public static void main(String[] args) {
+	/*
+	 GenericFluit<Fluit> a1 = new Generic<Fluit>();
+	 a1.setFluit(new Apple("사과", 2000));
+	 System.out.println();
+	 a2.setFluit(new Strawberry("딸기",1000));
+	 System.out.println();
+	 a3.setFluit(new Banana("바나나",2000));
+	 System.out.println();	
+	
+	*/
+	
 	GenericFluit <Apple> fluitapple = new GenericFluit();
 	fluitapple.setFluit(new Apple("사과", 2000));	
 	Apple apple = fluitapple.getFluit();
