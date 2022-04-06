@@ -17,7 +17,7 @@ import java.util.List;
 			 
 		- ArrayList<E> : 싱글 쓰레드 환경에서 사용.	 검색은 빠르나 값을 추가하거나 삭제시 느리다. 동기화X
 		- Vector<E>    : 멀티 쓰레드 환경에서 사용.	 모든 메소드가 동기화 되어있다.
-		- LinkedList<E>: 검색은 느리나 값을 추가나 삭제시 빠르다. 
+		- LinkedList<E>: 검색은 느리나 값을 추가나 삭제시 빠르다.
 
 */
 public class ArrayList_1 {
@@ -74,9 +74,12 @@ public class ArrayList_1 {
 		for(int i=0; i<aList.size(); i++) {	//List에서는 aList.size(); : 방의 개수 출력
 			System.out.print(aList.get(i)+ " , ");
 		}
-		
+		System.out.println();
 		System.out.println("===================");
 		//2.Enhanced For 문을 사용해서 출력
+		for(String k : aList) {
+			System.out.print(k + " ");
+		}System.out.println();
 		
 		//3. 객체의 toString()을 호출해서 출력
 		System.out.println(aList);	// List는 toString 메소드가 재정의 되어있다.
