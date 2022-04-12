@@ -25,8 +25,6 @@ public class TryWithResource_1 {
 				try {
 					isr2.close();		//일반예외 : IOException
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
 				}	
 			}
 			
