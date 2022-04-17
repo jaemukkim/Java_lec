@@ -65,7 +65,7 @@ public class EX_Reader_Writer {
 		} catch (Exception e) {}
 		
 		try {
-			InputStreamReader isr = new InputStreamReader(System.in, "MS949");
+			InputStreamReader isr = new InputStreamReader(System.in, "UTF-8");
 			System.out.println("한글을 입력하세요222>>>");
 			OutputStreamWriter osr = new OutputStreamWriter(new FileOutputStream(inFile2),"UTF-8");
 			
